@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View ,WebView} from 'react-native';
+import TwebPage from './twebPage';
 
 class toiletPage extends Component{
   constructor() {
@@ -8,7 +9,9 @@ class toiletPage extends Component{
 
   render(){
     return (
-      <View><Text style={styles.text}>toiletPage</Text></View>
+      <View style={styles.container}>
+        <TwebPage uri="http://localhost:63342/toilet/html/nearby.html?_ijt=rqbrlvljvhlfqfiiak423tjvnr"/>
+      </View>
     )
   }
 }
@@ -16,6 +19,9 @@ class toiletPage extends Component{
 var styles = StyleSheet.create({
   text:{
     fontSize:60
+  },
+  container:{
+    flex:1
   }
 });
 
