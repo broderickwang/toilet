@@ -40,7 +40,8 @@ export default class App extends Component<Props> {
 
   render() {
     return (
-      <TabBarIOS>
+        <Text>Hello</Text>
+      /*<TabBarIOS>
         <TabBarIOS.Item
           title="卫生间"
           icon={{uri:img1_base64,scale: 3.5}}
@@ -85,7 +86,7 @@ export default class App extends Component<Props> {
                 }}>
                 {this._renderView("setting")}
         </TabBarIOS.Item>
-      </TabBarIOS>
+      </TabBarIOS>*/
     );
   }
 
