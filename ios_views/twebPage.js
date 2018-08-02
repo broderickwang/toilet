@@ -19,7 +19,6 @@ class twebPage extends Component{
             <WebView
                 source={{uri: this.state.uri}}
                 startInLoadingState={true}
-                style={{marginTop: 20}}
                 onError={this._showError.bind(this)}
             />
           }
